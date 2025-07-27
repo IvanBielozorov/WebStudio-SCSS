@@ -8,8 +8,8 @@
 .footer-position {
   display: flex;
 }
-.footer-logo-span {
-  color: var(--secondary-text-color);
+.footer-address {
+  width: 231px;
 }
 .footer-logo {
     font-family: var(--second-family);
@@ -17,6 +17,9 @@
   font-size: 26px;
   letter-spacing: 0.03em;
   color: var(--hover-color);
+}
+.footer-logo-span {
+  color: var(--secondary-text-color);
 }
 .address {
   font-style: normal;
@@ -41,9 +44,6 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 }
-.footer-address {
-  width: 231px;
-}
 .footer-media {
   margin-left: 70px;
 }
@@ -60,9 +60,6 @@ margin-bottom: 20px;
   display: flex;
   column-gap: 10px;
 }
-.footer_svg {
-  fill: #fff;
-}
 .footer-media-box {
   display: flex;
   justify-content: center;
@@ -76,6 +73,9 @@ margin-bottom: 20px;
 .footer-media-box:hover {
   background-color: var(--hover-color);
   cursor: pointer;
+}
+.footer_svg {
+  fill: #fff;
 }
 // Form?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 .footer-form {

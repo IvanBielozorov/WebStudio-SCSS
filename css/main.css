@@ -667,8 +667,8 @@ body {
   display: flex;
 }
 
-.footer-logo-span {
-  color: var(--secondary-text-color);
+.footer-address {
+  width: 231px;
 }
 
 .footer-logo {
@@ -677,6 +677,10 @@ body {
   font-size: 26px;
   letter-spacing: 0.03em;
   color: var(--hover-color);
+}
+
+.footer-logo-span {
+  color: var(--secondary-text-color);
 }
 
 .address {
@@ -706,10 +710,6 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-address {
-  width: 231px;
-}
-
 .footer-media {
   margin-left: 70px;
 }
@@ -730,10 +730,6 @@ body {
        column-gap: 10px;
 }
 
-.footer_svg {
-  fill: #fff;
-}
-
 .footer-media-box {
   display: flex;
   justify-content: center;
@@ -748,6 +744,10 @@ body {
 .footer-media-box:hover {
   background-color: var(--hover-color);
   cursor: pointer;
+}
+
+.footer_svg {
+  fill: #fff;
 }
 
 .footer-form {
