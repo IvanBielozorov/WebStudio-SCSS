@@ -1,0 +1,48 @@
+.action {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.action-title {
+  font-family: var(--font-family);
+font-weight: 700;
+font-size: 36px;
+letter-spacing: 0.03em;
+text-align: center;
+color: var(--main-title-color);
+}
+.action-list {
+  list-style: none;
+}
+.action-position {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 50px;
+}
+.action-title {
+  display: flex;
+}
+.action-list {
+  position: relative;
+  display: flex;
+  column-gap: 30px;
+}
+.inscription {
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+font-family: var(--font-family);
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+text-align: center;
+color: #fff;
+padding-top: 27px;
+padding-bottom: 27px;
+}
