@@ -4,14 +4,16 @@
   margin-right: auto;
   padding-top: 94px;
 }
-.speciality-list .team {
-  letter-spacing: 0.03em;
+.speciality-title {
+  display: none;
 }
 .speciality-list {
   list-style: none;
+  display: flex;
+  column-gap: 30px;
 }
-.speciality-title {
-  display: none;
+.speciality-list .team {
+  letter-spacing: 0.03em;
 }
 .speciality-item::before {
   content: "";
@@ -51,8 +53,4 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 color: var(--main-text-color);
-}
-.speciality-list {
-  display: flex;
-  column-gap: 30px;
 }

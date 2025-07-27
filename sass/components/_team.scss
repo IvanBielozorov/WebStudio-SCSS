@@ -6,6 +6,14 @@
   padding-bottom: 94px;
   background-image: url("../images/teambg.png");
 }
+.team-position {
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+text-align: center;
+color: var(--main-text-color);
+padding-bottom: 16px;
+}
 .team-title {
   font-family: var(--font-family);
 font-weight: 700;
@@ -31,14 +39,6 @@ text-align: center;
 color: var(--main-title-color);
 padding-top: 30px;
 padding-bottom: 10px;
-}
-.team-position {
-  font-family: var(--font-family);
-font-weight: 400;
-font-size: 16px;
-text-align: center;
-color: var(--main-text-color);
-padding-bottom: 16px;
 }
 .team-media-list {
   display: flex;

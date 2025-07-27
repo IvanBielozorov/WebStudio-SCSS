@@ -5,17 +5,6 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.action-title {
-  font-family: var(--font-family);
-font-weight: 700;
-font-size: 36px;
-letter-spacing: 0.03em;
-text-align: center;
-color: var(--main-title-color);
-}
-.action-list {
-  list-style: none;
-}
 .action-position {
   display: flex;
   justify-content: center;
@@ -23,12 +12,19 @@ color: var(--main-title-color);
   row-gap: 50px;
 }
 .action-title {
-  display: flex;
+  font-family: var(--font-family);
+font-weight: 700;
+font-size: 36px;
+letter-spacing: 0.03em;
+text-align: center;
+color: var(--main-title-color);
+ display: flex;
 }
 .action-list {
   position: relative;
   display: flex;
   column-gap: 30px;
+   list-style: none;
 }
 .inscription {
   position: absolute;
