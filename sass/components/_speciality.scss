@@ -40,17 +40,17 @@
   background-image: url("../images/astronaut.png");
 }
 .speciality-item-title {
-  font-family: var(--font-family);
+  font-family: $font-family;
 font-weight: 700;
 font-size: 14px;
 text-transform: uppercase;
-color: var(--main-title-color);
+color: $main-title-color;
 margin-bottom: 10px;
 }
 .speciality-text {
-  font-family: var(--font-family);
+  font-family: $font-family;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
-color: var(--main-text-color);
+color: $main-text-color;
 }

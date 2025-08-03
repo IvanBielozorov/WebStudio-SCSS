@@ -26,7 +26,7 @@
   border-radius: 4px;
   width: 528px;
   height: 581px;
-  background-color: #fff;
+  background-color: $secondary-text-color;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -41,14 +41,14 @@
   width: 30px;
   height: 30px;
   border-radius: 100%;
-  background-color: #fff;
+  background-color: $secondary-text-color;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .svg-close {
   fill: #000;
 }
 .btn-close:hover .svg-close {
-  fill: var(--hover-color);
+  fill: $hover-color;
 }
 .btn-close:hover {
   cursor: pointer;
@@ -58,20 +58,20 @@
   flex-direction: column;
 }
 .modal-title {
-  font-family: var(--font-family);
+  font-family: $font-family;
 font-weight: 700;
 font-size: 20px;
 letter-spacing: 0.03em;
 text-align: center;
-color: #212121;
+color: $main-title-color;
 margin-bottom: 12px;
 }
 .label {
-  font-family: var(--font-family);
+  font-family: $font-family;
 font-weight: 400;
 font-size: 12px;
 letter-spacing: 0.01em;
-color: #757575;
+color: $main-text-color;
 width: 60px;
 }
 .input {
@@ -90,7 +90,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input:hover,
 .input:focus {
-  border-color: #2196F3;
+  border-color: $hover-color;
 }
 .modal_svg {
   position: absolute;
@@ -100,7 +100,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input:focus + .modal_svg,
 .input:hover + .modal_svg {
-  fill: #2196F3;
+  fill: $hover-color;
 }
 .input-container {
   position: relative;
@@ -114,7 +114,7 @@ resize: none;
 margin-bottom: 20px;
 }
 .input-text-area::placeholder {
-  font-family: var(--font-family);
+  font-family: $font-family;
 font-weight: 400;
 font-size: 12px;
 letter-spacing: 0.01em;
@@ -129,37 +129,37 @@ padding-left: 16px;
   align-items: center;
 }
 .checkbox {
-  border: 2px solid var(--main-title-color);
+  border: 2px solid $main-title-color;
   width: 16px;
   height: 15px;
   margin-right: 8px;
 }
 .agreement {
-  font-family: var(--font-family);
+  font-family: $font-family;
 font-weight: 400;
 font-size: 14px;
 line-height: 171%;
 letter-spacing: 0.03em;
-color: #757575;
+color: $main-text-color;
 }
 .agreement-link {
   text-decoration: underline;
 text-decoration-skip-ink: none;
-color: #2196f3;
+color: $hover-color;
 }
 .form-button {
   border-radius: 4px;
 width: 200px;
 height: 50px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-background: #2196f3;
-font-family: var(--font-family);
+background: $hover-color;
+font-family: $font-family;
 font-weight: 700;
 font-size: 16px;
 line-height: 187%;
 letter-spacing: 0.06em;
 text-align: center;
-color: #fff;
+color: $secondary-text-color;
 border: none;
 cursor: pointer;
 margin-left: 124px;

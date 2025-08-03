@@ -2,7 +2,7 @@
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-   font-family: var(--font-family);
+   font-family: $font-family;
 font-weight: 500;
 font-size: 14px;
 letter-spacing: 0.02em;
@@ -15,11 +15,11 @@ border-bottom: 1px solid #ececec;
   align-items: center;
 }
 .logo {
-  font-family: var(--second-family);
+  font-family: $second-family;
 font-weight: 700;
 font-size: 26px;
 letter-spacing: 0.03em;
-color: var(--hover-color);
+color: $hover-color;
 padding-right: 94px;
 }
 .logo-span {
@@ -31,13 +31,13 @@ padding-right: 94px;
   column-gap: 50px;
 }
 .nav-menu-link {
-color: var(--main-title-color);
+color: $main-title-color;
 position: relative;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-menu-link:hover,
 .nav-menu-link.active {
-color: var(--hover-color);
+color: $hover-color;
 }
 .nav-menu-link::after {
   content: "";
@@ -51,7 +51,7 @@ color: var(--hover-color);
 }
 .nav-menu-link:hover::after,
 .nav-menu-link.active::after {
-  background-color: var(--hover-color);
+  background-color: $hover-color;
 }
 .contact-list {
   list-style: none;
@@ -60,30 +60,30 @@ color: var(--hover-color);
   margin-left: auto;
 }
 .email {
-color: var(--main-text-color);
+color: $main-text-color;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
 .email:hover {
-color: var(--hover-color);
+color: $hover-color;
 }
 .email_svg {
-  fill: var(--main-text-color);
+  fill: $main-text-color;
   margin-right: 10px;
 }
 .email:hover .email_svg {
-  fill: var(--hover-color);
+  fill: $hover-color;
 }
 .phone-number {
-color: var(--main-text-color);
+color: $main-text-color;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
 .phone-number:hover {
-color: var(--hover-color);
+color: $hover-color;
 }
 .phone-number_svg {
-  fill: var(--main-text-color);
+  fill: $main-text-color;
   margin-right: 10px;
 }
 .phone-number:hover .phone-number_svg {
-  fill: #2196f3;
+  fill: $hover-color;
 }
