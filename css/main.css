@@ -122,19 +122,16 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/herobg.png");
   background-repeat: no-repeat;
 }
-
-.hero-position {
+.hero__position {
   display: flex;
   flex-wrap: wrap;
   row-gap: 30px;
   justify-content: center;
 }
-
-.hero-container-title {
+.hero__title-container {
   width: 100%;
 }
-
-.hero-title {
+.hero__title {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
@@ -147,8 +144,7 @@ body {
   text-align: center;
   color: #FFFFFF;
 }
-
-.hero-button {
+.hero__button {
   width: 216px;
   height: 50px;
   border-radius: 4px;
@@ -369,23 +365,19 @@ body {
   margin-right: auto;
   padding-top: 94px;
 }
-
-.speciality-title {
+.speciality__title {
   display: none;
 }
-
-.speciality-list {
+.speciality__list {
   list-style: none;
   display: flex;
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
-
-.speciality-list .team {
+.speciality__list .team {
   letter-spacing: 0.03em;
 }
-
-.speciality-item::before {
+.speciality__item::before {
   content: "";
   display: block;
   background-repeat: no-repeat;
@@ -397,24 +389,19 @@ body {
   background-position: center;
   margin-bottom: 30px;
 }
-
-.speciality-item:nth-child(1)::before {
+.speciality__item:nth-child(1)::before {
   background-image: url("../images/antenna.png");
 }
-
-.speciality-item:nth-child(2)::before {
+.speciality__item:nth-child(2)::before {
   background-image: url("../images/clock.png");
 }
-
-.speciality-item:nth-child(3)::before {
+.speciality__item:nth-child(3)::before {
   background-image: url("../images/diagram.png");
 }
-
-.speciality-item:nth-child(4)::before {
+.speciality__item:nth-child(4)::before {
   background-image: url("../images/astronaut.png");
 }
-
-.speciality-item-title {
+.speciality__item-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -422,8 +409,7 @@ body {
   color: #212121;
   margin-bottom: 10px;
 }
-
-.speciality-text {
+.speciality__text {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;

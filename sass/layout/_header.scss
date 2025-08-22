@@ -41,6 +41,7 @@
   &--active {
     color: $hover-color;
   }
+
   &::after {
     content: "";
     position: absolute;
@@ -51,11 +52,13 @@
     border-radius: 2px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
   &:hover::after,
   &--active::after {
     background-color: $hover-color;
   }
 }
+
 .contacts {
   list-style: none;
    display: flex;
@@ -76,6 +79,7 @@
       }
     }
   }
+  
   &__icon {
     fill: $main-text-color;
     margin-right: 10px;
