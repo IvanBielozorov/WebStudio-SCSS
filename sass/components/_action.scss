@@ -4,27 +4,30 @@
   margin-right: auto;
   padding-top: 94px;
   padding-bottom: 94px;
-}
-.action-position {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  row-gap: 50px;
-}
-.action-title {
-  font-family: $font-family;
-font-weight: 700;
-font-size: 36px;
-letter-spacing: 0.03em;
-text-align: center;
-color: $main-title-color;
- display: flex;
-}
-.action-list {
-  position: relative;
-  display: flex;
-  column-gap: 30px;
-   list-style: none;
+
+  &__position {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 50px;
+  }
+
+  &__title {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $main-title-color;
+    display: flex;
+  }
+
+  &__list {
+    position: relative;
+    display: flex;
+    column-gap: 30px;
+    list-style: none;
+  }
 }
 .inscription {
   position: absolute;
@@ -32,13 +35,13 @@ color: $main-title-color;
   width: 370px;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
-font-family: $font-family;
-font-weight: 700;
-font-size: 14px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-text-align: center;
-color: $secondary-text-color;
-padding-top: 27px;
-padding-bottom: 27px;
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $secondary-text-color;
+  padding-top: 27px;
+  padding-bottom: 27px;
 }
