@@ -130,7 +130,7 @@ body {
   }
   .contacts__button {
     display: block;
-    margin-left: 276px;
+    margin-left: 182px;
     fill: #000;
     background-color: white;
     border: none;
@@ -153,12 +153,13 @@ body {
   justify-content: center;
 }
 .hero__title-container {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
 }
 .hero__title {
   width: 696px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 44px;
@@ -189,10 +190,25 @@ body {
     width: 360px;
     font-size: 26px;
     line-height: 162%;
+    margin-left: 204px;
   }
   .hero__button {
     width: 200px;
     margin: 0 auto;
+    margin-left: 284px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__title {
+    width: 360px;
+    font-size: 26px;
+    line-height: 162%;
+    margin-left: 60px;
+  }
+  .hero__button {
+    width: 200px;
+    margin: 0 auto;
+    margin-left: 140px;
   }
 }
 .backdrop {
