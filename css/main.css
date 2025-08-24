@@ -424,6 +424,10 @@ body {
   display: flex;
   -moz-column-gap: 30px;
        column-gap: 30px;
+  flex-wrap: wrap;
+}
+.speciality__item {
+  flex-basis: calc((100% - 90px) / 4);
 }
 .speciality__list .team {
   letter-spacing: 0.03em;
@@ -468,6 +472,38 @@ body {
   color: #757575;
 }
 
+@media screen and (max-width: 768px) {
+  .speciality__list {
+    gap: 30px;
+    width: 738px;
+  }
+  .speciality__item {
+    flex-basis: calc((50% - 15px) / 2);
+    width: 354px;
+  }
+  .speciality__text {
+    max-width: 354px;
+  }
+  .speciality__item::before {
+    width: 354px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .speciality__item {
+    flex-basis: 100%;
+    max-width: 480px;
+  }
+  .speciality__item-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .speciality__text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
 .action {
   max-width: 1600px;
   margin-left: auto;
