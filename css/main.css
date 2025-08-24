@@ -111,7 +111,31 @@ body {
   fill: #757575;
   margin-right: 10px;
 }
+.contacts__button {
+  display: none;
+}
 
+@media screen and (max-width: 768px) {
+  .contacts {
+    display: block;
+    margin-left: 96px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .nav {
+    display: none;
+  }
+  .contacts {
+    display: none;
+  }
+  .contacts__button {
+    display: block;
+    margin-left: 276px;
+    fill: #000;
+    background-color: white;
+    border: none;
+  }
+}
 .hero {
   max-width: 1600px;
   height: 600px;
@@ -129,12 +153,12 @@ body {
   justify-content: center;
 }
 .hero__title-container {
-  width: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero__title {
   width: 696px;
-  margin-left: auto;
-  margin-right: auto;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 44px;
@@ -160,6 +184,17 @@ body {
   cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+  .hero__title {
+    width: 360px;
+    font-size: 26px;
+    line-height: 162%;
+  }
+  .hero__button {
+    width: 200px;
+    margin: 0 auto;
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;

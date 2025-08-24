@@ -84,4 +84,29 @@
     fill: $main-text-color;
     margin-right: 10px;
   }
+
+  &__button {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contacts {
+     display: block;
+     margin-left: 96px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .nav {
+    display: none;
+  }
+  .contacts {
+    display: none;
+  }
+  .contacts__button {
+    display: block;
+    margin-left: 276px;
+    fill: #000;
+    background-color: white;
+    border: none;
+  }
 }
