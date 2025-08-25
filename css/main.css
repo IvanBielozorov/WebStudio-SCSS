@@ -182,14 +182,26 @@ body {
 }
 
 .hero {
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background: #2F303A;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  margin: 0 auto;
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/herobg.png");
   background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 .hero__position {
   display: flex;
@@ -201,21 +213,27 @@ body {
   width: 100%;
 }
 .hero__title {
-  width: 696px;
-  display: block;
+  width: 360px;
   margin-left: auto;
   margin-right: auto;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 162%;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
   color: #FFFFFF;
 }
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 136%;
+  }
+}
 .hero__button {
-  width: 216px;
+  width: 200px;
   height: 50px;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -225,37 +243,15 @@ body {
   font-size: 16px;
   line-height: 187%;
   letter-spacing: 0.06em;
-  text-align: center;
   color: #FFFFFF;
   cursor: pointer;
 }
+@media screen and (min-width: 1200px) {
+  .hero__button {
+    width: 216px;
+  }
+}
 
-@media screen and (max-width: 768px) {
-  .hero__title {
-    width: 360px;
-    font-size: 26px;
-    line-height: 162%;
-    margin-left: 204px;
-  }
-  .hero__button {
-    width: 200px;
-    margin: 0 auto;
-    margin-left: 284px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .hero__title {
-    width: 360px;
-    font-size: 26px;
-    line-height: 162%;
-    margin-left: 60px;
-  }
-  .hero__button {
-    width: 200px;
-    margin: 0 auto;
-    margin-left: 140px;
-  }
-}
 .backdrop {
   position: fixed;
   top: 0;
