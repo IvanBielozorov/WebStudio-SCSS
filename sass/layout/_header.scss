@@ -1,41 +1,77 @@
 .header {
-  max-width: 1600px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
-  font-family: $font-family;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #ececec;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 
   &__position {
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
 }
-.logo {
+
+ .logo {
   font-family: $second-family;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   letter-spacing: 0.03em;
   color: $hover-color;
-  padding-right: 94px;
+  
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+  }
 
   &--black {
     color: #000;
   }
+ }
+.nav {
+@media screen and (min-width: 768px) {
+  margin-left: 87px;
+  margin-right: 96px;
 }
+@media screen and (min-width: 1200px) {
+  margin-left: 92px;
+  margin-right: auto;
+}
+}
+
 .nav__menu {
-  list-style: none;
-  display: flex;
-  column-gap: 50px;
+  display: none;
+  
+  @media screen and (min-width: 768px) {
+    display: flex;
+    column-gap: 50px;
+  }
+
 }
-.nav__link {
+
+@media screen and (min-width: 768px) {
+  .nav__link {
   color: $main-title-color;
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
   
   &:hover,
   &--active {
@@ -58,14 +94,16 @@
     background-color: $hover-color;
   }
 }
+}
 
 .contacts {
-  list-style: none;
-   display: flex;
-  column-gap: 50px;
-  margin-left: auto;
+  display: none;
+  
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: auto;
 
-  &__link {
+     &__link {
     display: flex;
     align-items: center;
     color: $main-text-color;
@@ -85,28 +123,19 @@
     margin-right: 10px;
   }
 
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    column-gap: 30px;
+   }
+
   &__button {
-    display: none;
-  }
-}
-@media screen and (max-width: 768px) {
-  .contacts {
-     display: block;
-     margin-left: 96px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .nav {
-    display: none;
-  }
-  .contacts {
-    display: none;
-  }
-  .contacts__button {
-    display: block;
-    margin-left: 182px;
-    fill: #000;
     background-color: white;
     border: none;
+
+   @media screen and (min-width: 768px) {
+    display: none;
+   }
+    
   }
 }
