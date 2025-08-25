@@ -4,15 +4,35 @@
   margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
-
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
    &__title {
     display: none;
   }
 
    &__list {
-    // display: flex;
-    // column-gap: 30px;
-    // flex-wrap: wrap;
+
+@media screen and (min-width: 768px) {
+      display: flex;
+    column-gap: 30px;
+    flex-wrap: wrap;
+}
+  }
+  &__item {
+
+@media screen and (min-width: 768px) {
+  flex-basis: calc((100% - 30px) / 2); 
+}
+@media screen and (min-width: 1200px) {
+  flex-basis: calc((100% - 90px) / 4); 
+}
+
   }
 
   //   &__list .team {
@@ -53,6 +73,10 @@
     letter-spacing: 0.03em;
     color: $main-title-color;
     margin-bottom: 10px;
+
+    @media screen and (min-width: 768px) {
+      justify-content: start;
+    }
   }
   &__text {
     font-family: $font-family;

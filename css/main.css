@@ -470,8 +470,38 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .speciality {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .speciality {
+    max-width: 1200px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .speciality__title {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .speciality__list {
+    display: flex;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .speciality__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .speciality__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 .speciality__item::before {
   content: "";
@@ -509,6 +539,11 @@ body {
   color: #212121;
   margin-bottom: 10px;
 }
+@media screen and (min-width: 768px) {
+  .speciality__item-title {
+    justify-content: start;
+  }
+}
 .speciality__text {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -518,58 +553,62 @@ body {
 }
 
 .action {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  display: none;
 }
-.action__position {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  row-gap: 50px;
-}
-.action__title {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: #212121;
-  display: flex;
-}
-.action__list {
-  position: relative;
-  display: flex;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-  list-style: none;
-}
-
-.inscription {
-  position: absolute;
-  bottom: 0;
-  width: 370px;
-  height: 70px;
-  background: rgba(47, 48, 58, 0.8);
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  text-align: center;
-  color: #FFFFFF;
-  padding-top: 27px;
-  padding-bottom: 27px;
+@media screen and (min-width: 1200px) {
+  .action {
+    display: block;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 94px;
+  }
+  .action__position {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 50px;
+  }
+  .action__title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #212121;
+    display: flex;
+  }
+  .action__list {
+    position: relative;
+    display: flex;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+    list-style: none;
+  }
+  .action .inscription {
+    position: absolute;
+    bottom: 0;
+    width: 360px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
 }
 
 .team {
-  max-width: 1600px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-image: url("../images/teambg.png");
 }
 .team__position {
@@ -579,6 +618,7 @@ body {
   text-align: center;
   color: #757575;
   padding-bottom: 16px;
+  letter-spacing: 0.03em;
   display: flex;
   justify-content: center;
   row-gap: 50px;
@@ -592,18 +632,31 @@ body {
   color: #212121;
 }
 .team__list {
-  list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  row-gap: 30px;
 }
 .team__item {
   background-image: url("../images/teamcardbg.jpg");
-  height: 428px;
+  width: 450px;
+  height: 622px;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
   background: #FFFFFF;
   border-radius: 0 0 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
+.team__image {
+  width: 100%;
 }
 .team__name {
   font-family: "Roboto", sans-serif;

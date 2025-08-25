@@ -1,10 +1,17 @@
 .action {
+  display: none;
+
+  @media screen and (min-width:1200px) {
+
+ 
+    display: block;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 94px;
+  // padding-top: 94px;
   padding-bottom: 94px;
 
+  
   &__position {
     display: flex;
     justify-content: center;
@@ -28,11 +35,11 @@
     column-gap: 30px;
     list-style: none;
   }
-}
+
 .inscription {
   position: absolute;
   bottom: 0;
-  width: 370px;
+  width: 360px;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
   font-family: $font-family;
@@ -44,4 +51,6 @@
   color: $secondary-text-color;
   padding-top: 27px;
   padding-bottom: 27px;
+}
+}
 }
