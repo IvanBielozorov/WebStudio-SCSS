@@ -153,10 +153,10 @@
     
 //   }
 // }
-  @media (min-width: 768px) {
-    @include bg-image("imagess/herotablet1x", "imagess/herotablet2x");
-  }
+  // @media (min-width: 768px) {
+  //   @include bg-image("imagess/herotablet1x", "imagess/herotablet2x");
+  // }
 
-  @media (min-width: 1200px) {
-    @include bg-image("imagess/herodesktop1x", "imagess/herodesktop2x");
-  }
+  // @media (min-width: 1200px) {
+  //   @include bg-image("imagess/herodesktop1x", "imagess/herodesktop2x");
+  // }

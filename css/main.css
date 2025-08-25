@@ -29,14 +29,14 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media screen and (min-width: 738px) {
+@media screen and (min-width: 768px) {
   .container {
     max-width: 738px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1170px;
   }
 }
 
@@ -66,6 +66,16 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .header__position {
+    max-width: 738px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__position {
+    max-width: 1170px;
+  }
+}
 
 .logo {
   font-family: "Raleway", sans-serif;
@@ -73,6 +83,7 @@ body {
   font-size: 24px;
   letter-spacing: 0.03em;
   color: #2196F3;
+  width: 134px;
 }
 @media screen and (min-width: 768px) {
   .logo {
@@ -82,6 +93,7 @@ body {
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
+    width: 145px;
   }
 }
 .logo--black {
@@ -452,32 +464,20 @@ body {
 }
 
 .speciality {
-  max-width: 1600px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .speciality__title {
   display: none;
-}
-.speciality__list {
-  list-style: none;
-  display: flex;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-  flex-wrap: wrap;
-}
-.speciality__item {
-  flex-basis: calc((100% - 90px) / 4);
-}
-.speciality__list .team {
-  letter-spacing: 0.03em;
 }
 .speciality__item::before {
   content: "";
   display: block;
   background-repeat: no-repeat;
-  width: 270px;
+  max-width: 450px;
   height: 120px;
   background-image: url("../images/rectangle.png");
   background-color: #f5f4fa;
@@ -498,10 +498,14 @@ body {
   background-image: url("../images/astronaut.png");
 }
 .speciality__item-title {
+  display: flex;
+  width: 100%;
+  justify-content: center;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
+  letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 10px;
 }
@@ -509,42 +513,10 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 171%;
   color: #757575;
 }
 
-@media screen and (max-width: 768px) {
-  .speciality__list {
-    gap: 30px;
-    width: 738px;
-  }
-  .speciality__item {
-    flex-basis: calc((50% - 15px) / 2);
-    width: 354px;
-  }
-  .speciality__text {
-    max-width: 354px;
-  }
-  .speciality__item::before {
-    width: 354px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .speciality__item {
-    flex-basis: 100%;
-    max-width: 480px;
-  }
-  .speciality__item-title {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .speciality__text {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-}
 .action {
   max-width: 1600px;
   margin-left: auto;
