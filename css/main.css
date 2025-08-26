@@ -611,6 +611,16 @@ body {
   padding-bottom: 60px;
   background-image: url("../images/teambg.png");
 }
+@media screen and (min-width: 768px) {
+  .team {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    max-width: 1200px;
+  }
+}
 .team__position {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -627,15 +637,26 @@ body {
 .team__title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
+  letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+  }
 }
 .team__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   row-gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team__list {
+    gap: 30px;
+  }
 }
 .team__item {
   background-image: url("../images/teamcardbg.jpg");
@@ -647,11 +668,14 @@ body {
 }
 @media screen and (min-width: 768px) {
   .team__item {
+    height: 536px;
     flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .team__item {
+    width: 270px;
+    height: 428px;
     flex-basis: calc((100% - 90px) / 4);
   }
 }
@@ -664,6 +688,7 @@ body {
   font-size: 16px;
   text-align: center;
   color: #212121;
+  letter-spacing: 0.03em;
   padding-top: 30px;
   padding-bottom: 10px;
 }
