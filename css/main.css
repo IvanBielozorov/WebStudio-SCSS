@@ -797,23 +797,58 @@ body {
 }
 
 .footer {
-  max-width: 1600px;
+  max-width: 100%;
   background: #2F303A;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
-  margin: 0 auto;
+  height: 600px;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    max-width: 768px;
+    height: 463px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    max-width: 1200px;
+  }
 }
 .footer__position {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__position {
+    flex-direction: row;
+    -moz-column-gap: 165px;
+         column-gap: 165px;
+  }
+}
+@media screen and (min-width: 1200x) {
+  .footer__position {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: start;
+    justify-content: start;
+  }
 }
 .footer__address {
   width: 231px;
+  margin-bottom: 60px;
+  text-align: center;
 }
 .footer__logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   letter-spacing: 0.03em;
+  text-align: center;
   color: #2196F3;
 }
 .footer__logo--black {
@@ -843,7 +878,12 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer__media {
-  margin-left: 70px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer__media {
+    margin-bottom: 99px;
+  }
 }
 .footer__media-title {
   font-family: "Roboto", sans-serif;
@@ -853,6 +893,7 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 20px;
+  text-align: center;
 }
 .footer__media-list {
   display: flex;
@@ -877,7 +918,9 @@ body {
   fill: #FFFFFF;
 }
 .footer__form {
-  margin-left: 93px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .footer__form-title {
   font-family: "Roboto", sans-serif;
@@ -887,9 +930,11 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 20px;
+  text-align: center;
 }
 .footer__input-box {
   display: flex;
+  position: relative;
 }
 .footer__input {
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -898,6 +943,7 @@ body {
   height: 50px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: rgba(33, 150, 243, 0);
+  display: block;
 }
 .footer__input::-moz-placeholder {
   font-family: "Roboto", sans-serif;
@@ -936,6 +982,9 @@ body {
   margin-left: 12px;
   border: none;
   cursor: pointer;
+  position: absolute;
+  top: 70px;
+  left: 62px;
 }
 .footer__button-icon {
   fill: #FFFFFF;
