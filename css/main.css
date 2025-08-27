@@ -813,7 +813,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer {
-    max-width: 1200px;
+    max-width: 1600px;
+    height: 252px;
   }
 }
 .footer__position {
@@ -830,18 +831,27 @@ body {
          column-gap: 165px;
   }
 }
-@media screen and (min-width: 1200x) {
+@media screen and (min-width: 1200px) {
   .footer__position {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: start;
     justify-content: start;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    max-width: 1170px;
   }
 }
 .footer__address {
   width: 231px;
   margin-bottom: 60px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__address {
+    margin-bottom: 0;
+    text-align: start;
+  }
 }
 .footer__logo {
   font-family: "Raleway", sans-serif;
@@ -850,6 +860,11 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   color: #2196F3;
+}
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    font-size: 26px;
+  }
 }
 .footer__logo--black {
   color: #FFFFFF;
@@ -865,6 +880,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #FFFFFF;
+  width: 231px;
 }
 .footer__list {
   list-style: none;
@@ -885,6 +901,13 @@ body {
     margin-bottom: 99px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__media {
+    margin-bottom: 0;
+    margin-left: 70px;
+    margin-top: 12px;
+  }
+}
 .footer__media-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -894,6 +917,11 @@ body {
   color: #FFFFFF;
   margin-bottom: 20px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__media-title {
+    text-align: start;
+  }
 }
 .footer__media-list {
   display: flex;
@@ -922,6 +950,15 @@ body {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer__form {
+    display: block;
+    flex-direction: row;
+    align-items: start;
+    margin-left: 93px;
+    margin-top: 12px;
+  }
+}
 .footer__form-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -932,9 +969,19 @@ body {
   margin-bottom: 20px;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer__form-title {
+    text-align: start;
+  }
+}
 .footer__input-box {
   display: flex;
   position: relative;
+}
+@media screen and (min-width: 1200px) {
+  .footer__input-box {
+    position: static;
+  }
 }
 .footer__input {
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -985,6 +1032,11 @@ body {
   position: absolute;
   top: 70px;
   left: 62px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__button {
+    position: static;
+  }
 }
 .footer__button-icon {
   fill: #FFFFFF;
