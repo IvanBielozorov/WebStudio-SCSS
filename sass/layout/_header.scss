@@ -52,7 +52,60 @@
     color: #000;
   }
  }
+   .btn-modal-label, .btn-modal {
+        display: none;
+    }
+
 .nav {
+  
+  @media screen and (max-width: 767px) {
+      // flex-grow: 3;
+        // order: 1;
+        .btn-modal:checked ~ .btn-modal-label .btn-modal-line {
+            transform: rotate(-45deg);
+        }
+        .btn-modal:checked ~ .btn-modal-label .btn-modal-line::before {
+            top: 0;
+        }
+        .btn-modal:checked ~ .btn-modal-label .btn-modal-line::after {
+            transform: rotate(90deg);
+            top: 0;
+        }
+        .btn-modal-label {
+            display: block;
+            width: 24px;
+            height: 16px;
+            // outline: 1px solid red;
+            margin-left: auto;
+            position: relative;
+
+        .btn-modal-line,
+        .btn-modal-line::before,
+        .btn-modal-line::after {
+            content: "";
+            display: block;
+            width: 24px;
+            height: 2px;
+            background-color: black;
+            position: absolute;
+            right: 0;
+
+        }
+        .btn-modal-line {
+            top: 4px;
+        }
+        .btn-modal-line::before {
+            top: -6px;
+        }
+        .btn-modal-line::after {
+            top: 6px;
+        }
+      }}
+    //     @media screen and (width: 768px) {
+    //        .btn-modal-label, .btn-modal {
+    //     display: none;
+    // }
+        }
 @media screen and (min-width: 768px) {
   margin-left: 87px;
   margin-right: 96px;
@@ -62,7 +115,11 @@
   margin-right: auto;
 }
 }
-
+@media screen and (min-width: 768px) {
+  .btn-modal-label, .btn-modal {
+        display: none;
+    }
+}
 .nav__menu {
   display: none;
   

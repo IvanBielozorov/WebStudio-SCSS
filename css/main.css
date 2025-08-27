@@ -100,6 +100,54 @@ body {
   color: #000;
 }
 
+.btn-modal-label, .btn-modal {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav .btn-modal:checked ~ .btn-modal-label .btn-modal-line {
+    transform: rotate(-45deg);
+  }
+  .nav .btn-modal:checked ~ .btn-modal-label .btn-modal-line::before {
+    top: 0;
+  }
+  .nav .btn-modal:checked ~ .btn-modal-label .btn-modal-line::after {
+    transform: rotate(90deg);
+    top: 0;
+  }
+  .nav .btn-modal-label {
+    display: block;
+    width: 24px;
+    height: 16px;
+    margin-left: auto;
+    position: relative;
+  }
+  .nav .btn-modal-label .btn-modal-line,
+  .nav .btn-modal-label .btn-modal-line::before,
+  .nav .btn-modal-label .btn-modal-line::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    right: 0;
+  }
+  .nav .btn-modal-label .btn-modal-line {
+    top: 4px;
+  }
+  .nav .btn-modal-label .btn-modal-line::before {
+    top: -6px;
+  }
+  .nav .btn-modal-label .btn-modal-line::after {
+    top: 6px;
+  }
+}
+@media screen and (width: 768px) {
+  .nav .btn-modal-label, .nav .btn-modal {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
   .nav {
     margin-left: 87px;
@@ -113,6 +161,11 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .btn-modal-label, .btn-modal {
+    display: none;
+  }
+}
 .nav__menu {
   display: none;
 }
