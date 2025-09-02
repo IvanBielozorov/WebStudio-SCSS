@@ -79,19 +79,23 @@
   }
 
   &__list {
+    @media screen and (min-width: 786px) {    
     display: flex;
     flex-wrap: wrap;
     column-gap: 30px;
     row-gap: 30px;
+    }
   }
 
   &__item {
-    flex-basis: calc((100% - 2 * 30px) / 3);
+    width: 100%;
     background-image: url("../images/portfoliocardbg.jpg");
     border: 1px solid #eee;
     overflow: hidden;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+    @media screen and (min-width: 786px) {   
+      flex-basis: calc((100% - 2 * 30px) / 3); 
+    }
     &:hover {
       box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     }
