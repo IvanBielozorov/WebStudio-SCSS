@@ -181,6 +181,15 @@
     }
     
     }
+
+      @media screen and (min-width: 1200px) {
+    
+    &__item {
+       &:nth-child(1) {
+      margin-bottom: 0;
+       }
+    }
+  }
      &__link {
     display: flex;
     align-items: center;
