@@ -200,7 +200,12 @@
         <li data-aos="flip-right" class="box__item">
             <article class="box__article">
                 <div class="box__image-wrapper">
-                <img class="box__image" src="./images/lab.jpg" alt="Етикетка">
+                     <picture>
+                     <source srcset="./images/desktop/lab.jpg 1x, ./images/desktop/lab@desktop2x.jpg 2x" media="(min-width: 1200px)">
+                     <source srcset="./images/tablet/lab.jpg 1x, ./images/tablet/lab@tablet2x.jpg 2x" media="(min-width: 768px)">
+                     <source srcset="./images/mobile/lab.jpg 1x, ./images/mobile/lab@mobile2x.jpg 2x"  media="(max-width: 767px)">
+                     <img class="box__image" src="./images/desktop/lab.jpg" alt="Етикетка">
+                     </picture>
                 <div class="box__overlay">
                     <p class="box__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
@@ -212,7 +217,12 @@
         <li data-aos="flip-right" class="box__item">
             <article class="box__article">
                 <div class="box__image-wrapper">
-                <img class="box__image" src="./images/growing-buis.jpg" alt="Людина працює за комп'ютером">
+                    <picture>
+                     <source srcset="./images/desktop/business.jpg 1x, ./images/desktop/business@desktop2x.jpg 2x" media="(min-width: 1200px)">
+                     <source srcset="./images/tablet/business.jpg 1x, ./images/tablet/business@tablet2x.jpg 2x" media="(min-width: 768px)">
+                     <source srcset="./images/mobile/business.jpg 1x, ./images/mobile/business@mobile2x.jpg 2x"  media="(max-width: 767px)">
+                     <img class="box__image" src="./images/desktop/business.jpg" alt="Людина працює за комп'ютером">
+                    </picture>
                 <div class="box__overlay">
                     <p class="box__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
