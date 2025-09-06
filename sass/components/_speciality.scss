@@ -51,16 +51,92 @@
     margin-bottom: 30px;
   }
   &__item:nth-child(1)::before {
-    background-image: url("../images/antenna.png");
+    background-image: url("../images/mobile/antenna.png");
+
+    @media (min-device-pixel-ratio: 2x), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url("../images/mobile/antenna@mobile2x.png");
+    }
+
+    @media screen and (min-width: 768px) {
+    background-image: url("../images/tablet/antenna.png");
+
+      @media (min-device-pixel-ratio: 2x), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url("../images/tablet/antenna@tablet2x.png");
+    }
+  }
+    @media screen and (min-width: 1200px) {
+    background-image: url("../images/desktop/antenna.png");
+
+      @media (min-device-pixel-ratio: 2x), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url("../images/desktop/antenna@desktop2x.png");
+    }
+  }
 }
   &__item:nth-child(2)::before {
-    background-image: url("../images/clock.png");
+    background-image: url("../images/mobile/clock.png");
+    
+    @media (min-device-pixel-ratio: 2x), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url("../images/mobile/clock@mobile2x.png");
+    }
+
+    @media screen and (min-width: 768px) {
+    background-image: url("../images/tablet/clock.png");
+
+      @media (min-device-pixel-ratio: 2x), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url("../images/tablet/clock@tablet2x.png");
+    }
+  }
+    @media screen and (min-width: 1200px) {
+    background-image: url("../images/desktop/clock.png");
+
+      @media (min-device-pixel-ratio: 2x), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url("../images/desktop/clock@desktop2x.png");
+    }
+  }
 }
   &__item:nth-child(3)::before {
-    background-image: url("../images/diagram.png");
+    background-image: url("../images/mobile/diagram.png");
+
+    @media (min-device-pixel-ratio: 2x), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url("../images/mobile/diagram@mobile2x.png");
+    }
+
+    @media screen and (min-width: 768px) {
+    background-image: url("../images/tablet/diagram.png");
+
+      @media (min-device-pixel-ratio: 2x), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url("../images/tablet/diagram@tablet2x.png");
+    }
+  }
+    @media screen and (min-width: 1200px) {
+    background-image: url("../images/desktop/diagram.png");
+
+      @media (min-device-pixel-ratio: 2x), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url("../images/desktop/diagram@desktop2x.png");
+    }
+  }
 }
   &__item:nth-child(4)::before {
-    background-image: url("../images/astronaut.png");
+    background-image: url("../images/mobile/astronaut.png");
+
+    @media (min-device-pixel-ratio: 2x), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url("../images/mobile/astronaut@mobile2x.png");
+    }
+
+    @media screen and (min-width: 768px) {
+    background-image: url("../images/tablet/astronaut.png");
+
+      @media (min-device-pixel-ratio: 2x), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url("../images/tablet/astronaut@tablet2x.png");
+    }
+  }
+    @media screen and (min-width: 1200px) {
+    background-image: url("../images/desktop/astronaut.png");
+
+      @media (min-device-pixel-ratio: 2x), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url("../images/desktop/astronaut@desktop2x.png");
+    }
+  }
 }
   &__item-title {
     display: flex;
