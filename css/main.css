@@ -939,7 +939,7 @@ body {
   margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
-  background-image: url("../images/teambg.png");
+  background-color: #f5f4fa;
 }
 @media screen and (min-width: 768px) {
   .team {
@@ -989,7 +989,6 @@ body {
   }
 }
 .team__item {
-  background-image: url("../images/teamcardbg.jpg");
   width: 450px;
   height: 622px;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
@@ -1445,13 +1444,11 @@ body {
 .boxes {
   display: none;
 }
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
   .box__list {
     display: flex;
     flex-wrap: wrap;
-    -moz-column-gap: 30px;
-         column-gap: 30px;
-    row-gap: 30px;
+    gap: 30px;
   }
 }
 .box__item {
@@ -1461,7 +1458,12 @@ body {
   overflow: hidden;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
+  .box__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
   .box__item {
     flex-basis: calc((100% - 60px) / 3);
   }
@@ -1486,8 +1488,8 @@ body {
 .box__overlay-text {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 156%;
+  font-size: 16px;
+  line-height: 187%;
   letter-spacing: 0.03em;
   color: #FFFFFF;
   padding: 63px 24px;

@@ -4,7 +4,7 @@
     margin-right: auto;
     padding-top: 60px;
     padding-bottom: 60px;
-    background-image: url("../images/teambg.png");
+    background-color: #f5f4fa;;
     
     @media screen and (min-width: 768px) {
       max-width: 768px;
@@ -52,7 +52,6 @@
   }
 
   &__item {
-    background-image: url("../images/teamcardbg.jpg");
     width: 450px;
     height: 622px;
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
