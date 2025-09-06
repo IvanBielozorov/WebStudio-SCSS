@@ -80,13 +80,14 @@
 .box {
 
   &__position {
-    padding-bottom: 94px;
+    padding-bottom: 60px;
     max-width: 480px;
     @media screen and (min-width: 768px) {
       max-width: 768px;
     }
     @media screen and (min-width: 1200px) {
       max-width: 1200px;
+      padding-bottom: 94px;
     }
   }
 
@@ -103,6 +104,10 @@
   }
 
   &__item {
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
     width: 100%;
     background-image: url("../images/portfoliocardbg.jpg");
     border: 1px solid #eee;
@@ -118,7 +123,10 @@
       box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     }
   }
-
+  &__image {
+    width: 100%;
+    height: auto;
+  }
   &__image-wrapper {
     position: relative;
     overflow: hidden;
