@@ -16,15 +16,24 @@
         <div class="container header__position">
         <a class="logo" href="/">Web<span class="logo--black">Studio</span></a>
         <nav class="nav">
-            <button
+            <!-- <button
           class="menu-toggle js-open-menu"
           aria-expanded="false"
           aria-controls="mobile-menu">
-            <input type="checkbox" id="toggle" class="btn-modal">
-            <label for="toggle" class="btn-modal-label">
+            <input type="checkbox" id="togglee" class="btn-modal">
+            <label for="togglee" class="btn-modal-label">
                 <span class="btn-modal-line"></span>
             </label>
-            </button>
+            </button> -->
+            <button
+  class="menu-toggle js-open-menu"
+  aria-expanded="false"
+  aria-controls="mobile-menu">
+  <svg width="40" height="40">
+    <use href="./icons/symbol-defs.svg#icon-menu_bar"></use>
+  </svg>
+  <span class="btn-modal-line"></span>
+</button>
         <ul class="nav__menu">
             <li class="nav__item">
                 <a class="nav__link nav__link--active" href="./index.html">Студія</a>
@@ -518,16 +527,43 @@
         <li><a href="" class="link">Contacts</a></li>
         <li><a href="" class="link">Career</a></li>
       </ul> -->
-      <ul class="nav__menu mobile-menu">
-            <li class="nav__item">
-                <a class="nav__link nav__link--active" href="./index.html">Студія</a>
+      <ul class="mobile-menu">
+            <li class="mob__item">
+                <a class="mob__link mob__link--active" href="./index.html">Студія</a>
             </li>
-            <li class="nav__item">
-                <a class="nav__link" href="./portfolio.html">Портфоліо</a>
+            <li class="mob__item">
+                <a class="mob__link" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="nav__item">
-                <a class="nav__link" href="#">Контакти</a>
+            <li class="mob__item">
+                <a class="mob__link" href="#">Контакти</a>
             </li>
+        </ul>
+        <ul class="contacts__mobile">
+            <li class="contacts__mobile-item">
+                <a class="contacts__mobile-link mob__modified" href="tel:+38096111111">
+                    +38 096 111 11 11</a>
+            </li>
+            <li class="contacts__mobile-item">
+                <a class="contacts__mobile-link" href="mailto:info@devstudio.com">
+                    info@devstudio.com</a>
+            </li>
+        </ul>
+        <ul class="mobile__social">
+        <li class="mobile__social-item">
+            <a class="mobile__social-link" href="#">Instagram<span class="mobile__social-border"></span></a>
+        </li>
+        <li class="mobile__social-item">
+            <a class="mobile__social-link" href="#">Twitter<span class="mobile__social-border"></span></a>
+          
+        </li>
+        <li class="mobile__social-item">
+            <a class="mobile__social-link" href="#">Facebook<span class="mobile__social-border"></span></a>
+            
+        </li>
+        <li class="mobile__social-item">
+            <a class="mobile__social-link" href="#">LinkedIn</a>
+            
+        </li>
         </ul>
     </div>
     <script
