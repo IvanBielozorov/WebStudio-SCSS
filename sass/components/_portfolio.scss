@@ -8,7 +8,16 @@
   padding-top: 94px;
   padding-bottom: 34px;
   }
-
+ 
+  &__position {
+    max-width: 480px;
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+    }
+  }
 
   &__title {
     display: none;
@@ -72,6 +81,13 @@
 
   &__position {
     padding-bottom: 94px;
+    max-width: 480px;
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+    }
   }
 
   &es {

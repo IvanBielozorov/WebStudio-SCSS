@@ -1284,7 +1284,7 @@ body {
     display: block;
     flex-direction: row;
     align-items: start;
-    margin-left: 93px;
+    margin-left: 63px;
     margin-top: 12px;
   }
 }
@@ -1387,6 +1387,19 @@ body {
     padding-bottom: 34px;
   }
 }
+.blocks__position {
+  max-width: 480px;
+}
+@media screen and (min-width: 768px) {
+  .blocks__position {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .blocks__position {
+    max-width: 1200px;
+  }
+}
 .blocks__title {
   display: none;
 }
@@ -1440,6 +1453,17 @@ body {
 
 .box__position {
   padding-bottom: 94px;
+  max-width: 480px;
+}
+@media screen and (min-width: 768px) {
+  .box__position {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .box__position {
+    max-width: 1200px;
+  }
 }
 .boxes {
   display: none;
